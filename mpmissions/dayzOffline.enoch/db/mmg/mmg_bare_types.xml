@@ -27,7 +27,7 @@
         <value name="Tier3" />
     </type>
     <type name="MMG_camelback_dark_woodland">
-        <nominal>3</nominal>
+        <nominal>2</nominal>
         <lifetime>7200</lifetime>
         <restock>7200</restock>
         <min>1</min>

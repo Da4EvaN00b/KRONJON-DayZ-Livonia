@@ -11,13 +11,6 @@
     <category name="clothes" />
     <usage name="Military" />
     <usage name="Hunting" />
-    <value name="Tier1" />
-    <value name="Tier4" />
-    <value name="Tier5" />
-    <value name="Tier6" />
-    <value name="Tier7" />
-    <value name="Tier8" />
-    <value name="Tier9" />
   </type>
   <type name="MMG_striker_helmet_admin">
     <nominal>0</nominal>
@@ -31,13 +24,6 @@
     <category name="clothes" />
     <usage name="Military" />
     <usage name="Hunting" />
-    <value name="Tier1" />
-    <value name="Tier4" />
-    <value name="Tier5" />
-    <value name="Tier6" />
-    <value name="Tier7" />
-    <value name="Tier8" />
-    <value name="Tier9" />
   </type>
   <type name="MMG_combatpants_admin">
     <nominal>0</nominal>
@@ -51,13 +37,6 @@
     <category name="clothes" />
     <usage name="Military" />
     <usage name="Hunting" />
-    <value name="Tier1" />
-    <value name="Tier4" />
-    <value name="Tier5" />
-    <value name="Tier6" />
-    <value name="Tier7" />
-    <value name="Tier8" />
-    <value name="Tier9" />
   </type>
   <type name="MMG_combatshirt_admin">
     <nominal>0</nominal>
@@ -71,13 +50,6 @@
     <category name="clothes" />
     <usage name="Military" />
     <usage name="Hunting" />
-    <value name="Tier1" />
-    <value name="Tier4" />
-    <value name="Tier5" />
-    <value name="Tier6" />
-    <value name="Tier7" />
-    <value name="Tier8" />
-    <value name="Tier9" />
   </type>
   <type name="MMG_balaclava_admin">
     <nominal>0</nominal>
@@ -91,12 +63,5 @@
     <category name="clothes" />
     <usage name="Military" />
     <usage name="Hunting" />
-    <value name="Tier1" />
-    <value name="Tier4" />
-    <value name="Tier5" />
-    <value name="Tier6" />
-    <value name="Tier7" />
-    <value name="Tier8" />
-    <value name="Tier9" />
   </type>
 </types>
