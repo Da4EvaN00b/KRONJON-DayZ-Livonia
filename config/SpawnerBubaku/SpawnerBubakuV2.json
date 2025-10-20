@@ -1,0 +1,117 @@
+{
+    "loglevel": 0,
+    "BubakLocations": [
+        {
+            "name": "BunkerGroup1",
+            "workinghours": "0-24",
+            "triggerdependency": [
+                ""
+            ],
+            "triggerpos": "730.564 531.423 1233.14",
+            "triggermins": "0 0 0",
+            "triggermaxs": "0 0 0",
+            "triggerradius": 3.0,
+            "triggercylradius": 0.0,
+            "triggercylheight": 0.0,
+            "notification": "",
+            "notificationtime": 2,
+            "triggerdelay": 7200,
+            "spawnerpos": [
+                "703.695 531.414 1226.37",
+                "702.152 531.432 1185.75",
+                "648.909 531.427 1143.26",
+                "603.274 531.412 1134.13",
+                "628.447 531.408 1153.23"
+            ],
+            "spawnradius": 1.0,
+            "bubakProps": {
+                "bubaknum": 6,
+                "onlyfilluptobubaknum": 1,
+                "itemrandomdmg": 1,
+                "bubaci": [
+                    "ZmbM_SoldierNormal",
+                    "ZmbM_PatrolNormal_PautRev",
+                    "ZmbM_PatrolNormal_Autumn",
+                    "ZmbM_usSoldier_Heavy_Woodland"
+                ],
+                "bubakinventory": [
+                    "Ammo_9x19"
+                ]
+            }
+        },
+        {
+            "name": "BunkerGroup2",
+            "workinghours": "0-24",
+            "triggerdependency": [
+                ""
+            ],
+            "triggerpos": "618.273 486.339 1152.61",
+            "triggermins": "0 0 0",
+            "triggermaxs": "0 0 0",
+            "triggerradius": 3.0,
+            "triggercylradius": 0.0,
+            "triggercylheight": 0.0,
+            "notification": "",
+            "notificationtime": 2,
+            "triggerdelay": 7200,
+            "spawnerpos": [
+                "626.857 501.259 1124.26",
+                "627.382 501.263 1143.14",
+                "645.048 501.252 1140.23",
+                "642.496 501.252 1146.27"
+            ],
+            "spawnradius": 1.0,
+            "bubakProps": {
+                "bubaknum": 6,
+                "onlyfilluptobubaknum": 1,
+                "itemrandomdmg": 1,
+                "bubaci": [
+                    "ZmbM_SoldierNormal",
+                    "ZmbM_PatrolNormal_PautRev",
+                    "ZmbM_PatrolNormal_Autumn",
+                    "ZmbM_usSoldier_Heavy_Woodland"
+                ],
+                "bubakinventory": [
+                    "Ammo_9x19"
+                ]
+            }
+        },
+        {
+            "name": "BunkerGroup3",
+            "workinghours": "0-24",
+            "triggerdependency": [
+                ""
+            ],
+            "triggerpos": "640.312 496.413 1153.69",
+            "triggermins": "0 0 0",
+            "triggermaxs": "0 0 0",
+            "triggerradius": 3.0,
+            "triggercylradius": 0.0,
+            "triggercylheight": 0.0,
+            "notification": "",
+            "notificationtime": 2,
+            "triggerdelay": 7200,
+            "spawnerpos": [
+                "640.617 486.398 1147.53",
+                "650.102 486.362 1144.51",
+                "646.174 486.362 1149.12",
+                "638.832 486.39 1134.88"
+            ],
+            "spawnradius": 1.0,
+            "bubakProps": {
+                "bubaknum": 6,
+                "onlyfilluptobubaknum": 1,
+                "itemrandomdmg": 1,
+                "bubaci": [
+                    "ZmbM_SoldierNormal",
+                    "ZmbM_PatrolNormal_PautRev",
+                    "ZmbM_PatrolNormal_Autumn",
+                    "ZmbM_usSoldier_Heavy_Woodland"
+                ],
+                "bubakinventory": [
+                    "Ammo_9x19"
+                ]
+            }
+        }
+    ]
+}
