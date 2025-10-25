@@ -842,6 +842,14 @@ class Expansion_Master_TidyCargo_State_0: eAIState_TidyCargo {
 		m_Name = "TidyCargo";
 	}
 }
+class Expansion_Master_Struggle_State_0: eAIState_Struggle {
+	Expansion_Master_FSM_0 fsm;
+	void Expansion_Master_Struggle_State_0(ExpansionFSM _fsm) {
+		Class.CastTo(fsm, _fsm);
+		m_ClassName = "Expansion_Master_Struggle_State_0";
+		m_Name = "Struggle";
+	}
+}
 class Expansion_Master__Unconscious_Transition_0: eAITransition {
 	private ExpansionState src;
 	private Expansion_Master_Unconscious_State_0 dst;
@@ -871,6 +879,74 @@ class Expansion_Master_Unconscious_Idle_Transition_0: eAITransition {
 	}
 	override int Guard() {
 		return src.GuardIdle();
+	}
+	override ExpansionState GetSource() { return src; }
+	override ExpansionState GetDestination() { return dst; }
+	override string GetEvent() { return ""; }
+}
+class Expansion_Master_Idle_Struggle_Transition_0: eAITransition {
+	private Expansion_Master_Idle_State_0 src;
+	private Expansion_Master_Struggle_State_0 dst;
+	Expansion_Master_FSM_0 fsm;
+	void Expansion_Master_Idle_Struggle_Transition_0(ExpansionFSM _fsm) {
+		Class.CastTo(fsm, _fsm);
+		m_ClassName = "Expansion_Master_Idle_Struggle_Transition_0";
+		Class.CastTo(src, _fsm.GetState("Expansion_Master_Idle_State_0"));
+		Class.CastTo(dst, _fsm.GetState("Expansion_Master_Struggle_State_0"));
+	}
+	override int Guard() {
+		return dst.Guard();
+	}
+	override ExpansionState GetSource() { return src; }
+	override ExpansionState GetDestination() { return dst; }
+	override string GetEvent() { return ""; }
+}
+class Expansion_Master_TraversingWaypoints_Struggle_Transition_0: eAITransition {
+	private Expansion_Master_TraversingWaypoints_State_0 src;
+	private Expansion_Master_Struggle_State_0 dst;
+	Expansion_Master_FSM_0 fsm;
+	void Expansion_Master_TraversingWaypoints_Struggle_Transition_0(ExpansionFSM _fsm) {
+		Class.CastTo(fsm, _fsm);
+		m_ClassName = "Expansion_Master_TraversingWaypoints_Struggle_Transition_0";
+		Class.CastTo(src, _fsm.GetState("Expansion_Master_TraversingWaypoints_State_0"));
+		Class.CastTo(dst, _fsm.GetState("Expansion_Master_Struggle_State_0"));
+	}
+	override int Guard() {
+		return dst.Guard();
+	}
+	override ExpansionState GetSource() { return src; }
+	override ExpansionState GetDestination() { return dst; }
+	override string GetEvent() { return ""; }
+}
+class Expansion_Master_FollowFormation_Struggle_Transition_0: eAITransition {
+	private Expansion_Master_FollowFormation_State_0 src;
+	private Expansion_Master_Struggle_State_0 dst;
+	Expansion_Master_FSM_0 fsm;
+	void Expansion_Master_FollowFormation_Struggle_Transition_0(ExpansionFSM _fsm) {
+		Class.CastTo(fsm, _fsm);
+		m_ClassName = "Expansion_Master_FollowFormation_Struggle_Transition_0";
+		Class.CastTo(src, _fsm.GetState("Expansion_Master_FollowFormation_State_0"));
+		Class.CastTo(dst, _fsm.GetState("Expansion_Master_Struggle_State_0"));
+	}
+	override int Guard() {
+		return dst.Guard();
+	}
+	override ExpansionState GetSource() { return src; }
+	override ExpansionState GetDestination() { return dst; }
+	override string GetEvent() { return ""; }
+}
+class Expansion_Master_Struggle_Idle_Transition_0: eAITransition {
+	private Expansion_Master_Struggle_State_0 src;
+	private Expansion_Master_Idle_State_0 dst;
+	Expansion_Master_FSM_0 fsm;
+	void Expansion_Master_Struggle_Idle_Transition_0(ExpansionFSM _fsm) {
+		Class.CastTo(fsm, _fsm);
+		m_ClassName = "Expansion_Master_Struggle_Idle_Transition_0";
+		Class.CastTo(src, _fsm.GetState("Expansion_Master_Struggle_State_0"));
+		Class.CastTo(dst, _fsm.GetState("Expansion_Master_Idle_State_0"));
+	}
+	override int Guard() {
+		return SUCCESS;
 	}
 	override ExpansionState GetSource() { return src; }
 	override ExpansionState GetDestination() { return dst; }
@@ -1037,6 +1113,23 @@ class Expansion_Master_Fighting_Bandaging_Self_Transition_0: eAITransition {
 		Class.CastTo(fsm, _fsm);
 		m_ClassName = "Expansion_Master_Fighting_Bandaging_Self_Transition_0";
 		Class.CastTo(src, _fsm.GetState("Expansion_Master_Fighting_State_0"));
+		Class.CastTo(dst, _fsm.GetState("Expansion_Master_Bandaging_Self_State_0"));
+	}
+	override int Guard() {
+		return dst.Guard();
+	}
+	override ExpansionState GetSource() { return src; }
+	override ExpansionState GetDestination() { return dst; }
+	override string GetEvent() { return ""; }
+}
+class Expansion_Master_TakeItemToHands_Bandaging_Self_Transition_0: eAITransition {
+	private Expansion_Master_TakeItemToHands_State_0 src;
+	private Expansion_Master_Bandaging_Self_State_0 dst;
+	Expansion_Master_FSM_0 fsm;
+	void Expansion_Master_TakeItemToHands_Bandaging_Self_Transition_0(ExpansionFSM _fsm) {
+		Class.CastTo(fsm, _fsm);
+		m_ClassName = "Expansion_Master_TakeItemToHands_Bandaging_Self_Transition_0";
+		Class.CastTo(src, _fsm.GetState("Expansion_Master_TakeItemToHands_State_0"));
 		Class.CastTo(dst, _fsm.GetState("Expansion_Master_Bandaging_Self_State_0"));
 	}
 	override int Guard() {
@@ -1233,18 +1326,18 @@ class Expansion_Master_FollowFormation_TakeItemToHands_Transition_0: eAITransiti
 	override ExpansionState GetDestination() { return dst; }
 	override string GetEvent() { return ""; }
 }
-class Expansion_Master_TakeItemToHands_Idle_Transition_0: eAITransition {
-	private Expansion_Master_TakeItemToHands_State_0 src;
-	private Expansion_Master_Idle_State_0 dst;
+class Expansion_Master_TakeItemToInventory_TakeItemToHands_Transition_0: eAITransition {
+	private Expansion_Master_TakeItemToInventory_State_0 src;
+	private Expansion_Master_TakeItemToHands_State_0 dst;
 	Expansion_Master_FSM_0 fsm;
-	void Expansion_Master_TakeItemToHands_Idle_Transition_0(ExpansionFSM _fsm) {
+	void Expansion_Master_TakeItemToInventory_TakeItemToHands_Transition_0(ExpansionFSM _fsm) {
 		Class.CastTo(fsm, _fsm);
-		m_ClassName = "Expansion_Master_TakeItemToHands_Idle_Transition_0";
-		Class.CastTo(src, _fsm.GetState("Expansion_Master_TakeItemToHands_State_0"));
-		Class.CastTo(dst, _fsm.GetState("Expansion_Master_Idle_State_0"));
+		m_ClassName = "Expansion_Master_TakeItemToInventory_TakeItemToHands_Transition_0";
+		Class.CastTo(src, _fsm.GetState("Expansion_Master_TakeItemToInventory_State_0"));
+		Class.CastTo(dst, _fsm.GetState("Expansion_Master_TakeItemToHands_State_0"));
 	}
 	override int Guard() {
-		return SUCCESS;
+		return dst.Guard();
 	}
 	override ExpansionState GetSource() { return src; }
 	override ExpansionState GetDestination() { return dst; }
@@ -1313,6 +1406,57 @@ class Expansion_Master_Skinning_TakeItemToInventory_Transition_0: eAITransition 
 	}
 	override int Guard() {
 		return dst.Guard();
+	}
+	override ExpansionState GetSource() { return src; }
+	override ExpansionState GetDestination() { return dst; }
+	override string GetEvent() { return ""; }
+}
+class Expansion_Master_TakeItemToInventory_TakeItemToInventory_Transition_0: eAITransition {
+	private Expansion_Master_TakeItemToInventory_State_0 src;
+	private Expansion_Master_TakeItemToInventory_State_0 dst;
+	Expansion_Master_FSM_0 fsm;
+	void Expansion_Master_TakeItemToInventory_TakeItemToInventory_Transition_0(ExpansionFSM _fsm) {
+		Class.CastTo(fsm, _fsm);
+		m_ClassName = "Expansion_Master_TakeItemToInventory_TakeItemToInventory_Transition_0";
+		Class.CastTo(src, _fsm.GetState("Expansion_Master_TakeItemToInventory_State_0"));
+		Class.CastTo(dst, _fsm.GetState("Expansion_Master_TakeItemToInventory_State_0"));
+	}
+	override int Guard() {
+		return dst.Guard();
+	}
+	override ExpansionState GetSource() { return src; }
+	override ExpansionState GetDestination() { return dst; }
+	override string GetEvent() { return ""; }
+}
+class Expansion_Master_TakeItemToHands_TakeItemToInventory_Transition_0: eAITransition {
+	private Expansion_Master_TakeItemToHands_State_0 src;
+	private Expansion_Master_TakeItemToInventory_State_0 dst;
+	Expansion_Master_FSM_0 fsm;
+	void Expansion_Master_TakeItemToHands_TakeItemToInventory_Transition_0(ExpansionFSM _fsm) {
+		Class.CastTo(fsm, _fsm);
+		m_ClassName = "Expansion_Master_TakeItemToHands_TakeItemToInventory_Transition_0";
+		Class.CastTo(src, _fsm.GetState("Expansion_Master_TakeItemToHands_State_0"));
+		Class.CastTo(dst, _fsm.GetState("Expansion_Master_TakeItemToInventory_State_0"));
+	}
+	override int Guard() {
+		return dst.Guard();
+	}
+	override ExpansionState GetSource() { return src; }
+	override ExpansionState GetDestination() { return dst; }
+	override string GetEvent() { return ""; }
+}
+class Expansion_Master_TakeItemToHands_Idle_Transition_0: eAITransition {
+	private Expansion_Master_TakeItemToHands_State_0 src;
+	private Expansion_Master_Idle_State_0 dst;
+	Expansion_Master_FSM_0 fsm;
+	void Expansion_Master_TakeItemToHands_Idle_Transition_0(ExpansionFSM _fsm) {
+		Class.CastTo(fsm, _fsm);
+		m_ClassName = "Expansion_Master_TakeItemToHands_Idle_Transition_0";
+		Class.CastTo(src, _fsm.GetState("Expansion_Master_TakeItemToHands_State_0"));
+		Class.CastTo(dst, _fsm.GetState("Expansion_Master_Idle_State_0"));
+	}
+	override int Guard() {
+		return SUCCESS;
 	}
 	override ExpansionState GetSource() { return src; }
 	override ExpansionState GetDestination() { return dst; }
@@ -2245,8 +2389,13 @@ class Expansion_Master_FSM_0: eAIFSM {
 		AddState(new Expansion_Master_PlayEmote_State_0(this));
 		AddState(new Expansion_Master_DropItem_State_0(this));
 		AddState(new Expansion_Master_TidyCargo_State_0(this));
+		AddState(new Expansion_Master_Struggle_State_0(this));
 		AddTransition(new Expansion_Master__Unconscious_Transition_0(this));
 		AddTransition(new Expansion_Master_Unconscious_Idle_Transition_0(this));
+		AddTransition(new Expansion_Master_Idle_Struggle_Transition_0(this));
+		AddTransition(new Expansion_Master_TraversingWaypoints_Struggle_Transition_0(this));
+		AddTransition(new Expansion_Master_FollowFormation_Struggle_Transition_0(this));
+		AddTransition(new Expansion_Master_Struggle_Idle_Transition_0(this));
 		AddTransition(new Expansion_Master_Idle_Leave_Transition_0(this));
 		AddTransition(new Expansion_Master_TraversingWaypoints_Leave_Transition_0(this));
 		AddTransition(new Expansion_Master_FollowFormation_Leave_Transition_0(this));
@@ -2257,6 +2406,7 @@ class Expansion_Master_FSM_0: eAIFSM {
 		AddTransition(new Expansion_Master_FollowFormation_Bandaging_Self_Transition_0(this));
 		AddTransition(new Expansion_Master_Flank_Bandaging_Self_Transition_0(this));
 		AddTransition(new Expansion_Master_Fighting_Bandaging_Self_Transition_0(this));
+		AddTransition(new Expansion_Master_TakeItemToHands_Bandaging_Self_Transition_0(this));
 		AddTransition(new Expansion_Master_Bandaging_Self_Idle_Transition_0(this));
 		AddTransition(new Expansion_Master_Idle_Weapon_Reloading_Transition_0(this));
 		AddTransition(new Expansion_Master_TraversingWaypoints_Weapon_Reloading_Transition_0(this));
@@ -2268,11 +2418,15 @@ class Expansion_Master_FSM_0: eAIFSM {
 		AddTransition(new Expansion_Master_Fighting_TakeItemToHands_Transition_0(this));
 		AddTransition(new Expansion_Master_TraversingWaypoints_TakeItemToHands_Transition_0(this));
 		AddTransition(new Expansion_Master_FollowFormation_TakeItemToHands_Transition_0(this));
-		AddTransition(new Expansion_Master_TakeItemToHands_Idle_Transition_0(this));
+		AddTransition(new Expansion_Master_TakeItemToInventory_TakeItemToHands_Transition_0(this));
 		AddTransition(new Expansion_Master_Idle_TakeItemToInventory_Transition_0(this));
 		AddTransition(new Expansion_Master_Flank_TakeItemToInventory_Transition_0(this));
 		AddTransition(new Expansion_Master_Fighting_TakeItemToInventory_Transition_0(this));
 		AddTransition(new Expansion_Master_Skinning_TakeItemToInventory_Transition_0(this));
+		AddTransition(new Expansion_Master_TakeItemToInventory_TakeItemToInventory_Transition_0(this));
+		AddTransition(new Expansion_Master_TakeItemToHands_TakeItemToInventory_Transition_0(this));
+		AddTransition(new Expansion_Master_Skinning_TakeItemToInventory_Transition_0(this));
+		AddTransition(new Expansion_Master_TakeItemToHands_Idle_Transition_0(this));
 		AddTransition(new Expansion_Master_TakeItemToInventory_Idle_Transition_0(this));
 		AddTransition(new Expansion_Master_Idle_Weapon_Unjamming_Transition_0(this));
 		AddTransition(new Expansion_Master_TraversingWaypoints_Weapon_Unjamming_Transition_0(this));

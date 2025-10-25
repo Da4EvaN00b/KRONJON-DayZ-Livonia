@@ -633,5 +633,16 @@
         "Land_CementWorks_SiloBig1A",
         "Land_CementWorks_SiloBig1B"
     ],
-    "NoGoAreas": []
+    "NoGoAreas": [
+        {
+            "Name": "Kamieniolom-Maksymilian",
+            "Position": [
+                6421.98,
+                0.0,
+                4761.63
+            ],
+            "Radius": 25.0,
+            "Height": 310.60
+        }
+    ]
 }
