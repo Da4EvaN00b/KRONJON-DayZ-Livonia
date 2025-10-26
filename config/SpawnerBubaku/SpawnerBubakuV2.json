@@ -25,7 +25,7 @@
             ],
             "spawnradius": 1.0,
             "bubakProps": {
-                "bubaknum": 6,
+                "bubaknum": 10,
                 "onlyfilluptobubaknum": 1,
                 "itemrandomdmg": 1,
                 "bubaci": [
@@ -62,7 +62,7 @@
             ],
             "spawnradius": 1.0,
             "bubakProps": {
-                "bubaknum": 6,
+                "bubaknum": 8,
                 "onlyfilluptobubaknum": 1,
                 "itemrandomdmg": 1,
                 "bubaci": [
@@ -99,7 +99,48 @@
             ],
             "spawnradius": 1.0,
             "bubakProps": {
-                "bubaknum": 6,
+                "bubaknum": 10,
+                "onlyfilluptobubaknum": 1,
+                "itemrandomdmg": 1,
+                "bubaci": [
+                    "ZmbM_SoldierNormal",
+                    "ZmbM_PatrolNormal_PautRev",
+                    "ZmbM_PatrolNormal_Autumn",
+                    "ZmbM_usSoldier_Heavy_Woodland"
+                ],
+                "bubakinventory": [
+                    "Ammo_9x19"
+                ]
+            }
+        },
+        {
+            "name": "BunkerGroup4",
+            "workinghours": "0-24",
+            "triggerdependency": [
+                ""
+            ],
+            "triggerpos": "676.487 531.411 1143.16",
+            "triggermins": "0 0 0",
+            "triggermaxs": "0 0 0",
+            "triggerradius": 3.0,
+            "triggercylradius": 0.0,
+            "triggercylheight": 0.0,
+            "notification": "",
+            "notificationtime": 2,
+            "triggerdelay": 7200,
+            "spawnerpos": [
+                "617.551 576.62 1143.14",
+                "611.574 576.66 1139.21",
+                "593.888 576.602 1133.65",
+                "595.608 574.151 1158.22",
+                "599.303 576.66 1148.22",
+                "594.641 576.62 1139.49",
+                "595.451 574.151 1158.42",
+                "612.152 576.66 1143.18"
+            ],
+            "spawnradius": 1.0,
+            "bubakProps": {
+                "bubaknum": 14,
                 "onlyfilluptobubaknum": 1,
                 "itemrandomdmg": 1,
                 "bubaci": [
