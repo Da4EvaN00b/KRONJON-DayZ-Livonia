@@ -140,7 +140,7 @@
         <quantmin>30</quantmin>
         <quantmax>80</quantmax>
         <cost>100</cost>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="1"/>
+        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
         <category name="weapons"/>
         <usage name="Military"/>
     </type>
@@ -12354,22 +12354,22 @@
         <value name="Tier3"/>
     </type>
     <type name="Mag_AK74_30Rnd">
-        <nominal>0</nominal>
+        <nominal>3</nominal>
         <lifetime>28800</lifetime>
         <restock>0</restock>
-        <min>0</min>
+        <min>2</min>
         <quantmin>5</quantmin>
         <quantmax>50</quantmax>
         <cost>100</cost>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="1"/>
+        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
         <category name="weapons"/>
         <usage name="Military"/>
     </type>
     <type name="Mag_AK74_45Rnd">
-        <nominal>0</nominal>
+        <nominal>2</nominal>
         <lifetime>5400</lifetime>
         <restock>1800</restock>
-        <min>0</min>
+        <min>1</min>
         <quantmin>10</quantmin>
         <quantmax>50</quantmax>
         <cost>100</cost>
@@ -12720,10 +12720,10 @@
         <usage name="Police"/>
     </type>
     <type name="Mag_PP19_64Rnd">
-        <nominal>0</nominal>
+        <nominal>3</nominal>
         <lifetime>28800</lifetime>
         <restock>3600</restock>
-        <min>0</min>
+        <min>2</min>
         <quantmin>10</quantmin>
         <quantmax>50</quantmax>
         <cost>100</cost>
@@ -14542,10 +14542,10 @@
         <usage name="Police"/>
     </type>
     <type name="PP19">
-        <nominal>0</nominal>
+        <nominal>2</nominal>
         <lifetime>28800</lifetime>
         <restock>3600</restock>
-        <min>0</min>
+        <min>1</min>
         <quantmin>30</quantmin>
         <quantmax>80</quantmax>
         <cost>100</cost>
@@ -18493,6 +18493,7 @@
         <category name="weapons"/>
         <tag name="shelves"/>
         <usage name="ContaminatedArea"/>
+        <usage name="Military"/>
     </type>
     <type name="StartKitIV">
         <nominal>10</nominal>

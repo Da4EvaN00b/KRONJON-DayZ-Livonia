@@ -1,6 +1,6 @@
 {
-    "m_Version": 8,
+    "m_Version": 9,
     "ServerUpdateRateLimit": 0,
-    "FixCELifetime": 0,
-    "EnableInventoryCargoTidy": 0
+    "ForceExactCEItemLifetime": 1,
+    "EnableInventoryCargoTidy": 1
 }
