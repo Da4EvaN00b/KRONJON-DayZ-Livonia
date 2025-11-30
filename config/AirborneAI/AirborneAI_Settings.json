@@ -1,7 +1,7 @@
 {
     "Enabled": 1,
     "minPlayersToSpawnAircraft": 1,
-    "maxActiveAircraft": 3,
+    "maxActiveAircraft": 4,
     "startDelayTime": 60,
     "timeBetweenPlaneSpawns": 300,
     "allowNightFlights": 0,
@@ -27,7 +27,7 @@
     "maxMoveSpeed": 3.0,
     "minMoveSpeed": 2.0,
     "noiseInvestigationRange": 950.0,
-    "maxAccuracy": 0.91,
+    "maxAccuracy": 0.92,
     "minAccuracy": 0.85,
     "threatDetectionRange": 400.0,
     "aiDespawnDistance": 950.0,
