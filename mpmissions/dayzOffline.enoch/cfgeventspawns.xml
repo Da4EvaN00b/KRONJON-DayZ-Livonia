@@ -752,6 +752,7 @@
     <event name="AnimalWolf" />
     <event name="AnimalWildBoar" />
 
+	<!-- EXPANSION VEHICLES -->
 	<event name="VehicleUAZ">
 		<pos x="9108.906250" y="301.448334" z="6690.660156" a="-111.157738" />
 		<pos x="9917.681641" y="353.133087" z="3783.781006" a="-123.279953" />
