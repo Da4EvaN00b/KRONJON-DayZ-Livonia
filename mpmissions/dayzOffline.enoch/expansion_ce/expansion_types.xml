@@ -1121,7 +1121,7 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
     </type>
     <type name="ExpansionMerlinFrontWheel">
-        <nominal>10</nominal>
+        <nominal>4</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>5</min>
@@ -1134,7 +1134,7 @@
         <usage name="Industrial"/>
     </type>
     <type name="ExpansionMerlinBackWheel">
-        <nominal>10</nominal>
+        <nominal>4</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>5</min>
