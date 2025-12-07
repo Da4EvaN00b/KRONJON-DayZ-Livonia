@@ -368,7 +368,7 @@
                 {
                     "ClassName": "PlateCarrierVest",
                     "Include": "",
-                    "Chance": 1.0,
+                    "Chance": 0.5,
                     "Quantity": {
                         "Min": 0.0,
                         "Max": 0.0
