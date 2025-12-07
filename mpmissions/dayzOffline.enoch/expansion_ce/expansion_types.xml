@@ -30,18 +30,17 @@
         <value name="Tier3"/>
 	</type>
     <type name="AmmoBox_Expansion_338_15rnd">
-        <nominal>14</nominal>
+        <nominal>15</nominal>
         <lifetime>10800</lifetime>
         <restock>0</restock>
-        <min>10</min>
+        <min>12</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
         <category name="weapons"/>
         <usage name="Village"/>
-        <value name="Tier2"/>
-        <value name="Tier3"/>
+        <usage name="Village"/>
     </type>
     <type name="Ammo_Expansion_338">
         <nominal>60</nominal>
@@ -54,6 +53,7 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
         <category name="weapons"/>
         <usage name="Village"/>
+        <usage name="Hunting"/>
     </type>
     <type name="Mag_Expansion_AWM_5Rnd">
 	    <nominal>8</nominal>
@@ -67,7 +67,8 @@
         <category name="weapons"/>
         <usage name="Village"/>
         <usage name="Hunting"/>
-        <usage name="Military"/>
+        <value name="Tier2"/>
+        <value name="Tier3"/>
 	</type>
     <type name="Expansion_AWM">
         <nominal>3</nominal>
