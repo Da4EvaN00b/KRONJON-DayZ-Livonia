@@ -1,5 +1,5 @@
 {
-    "m_Version": 16,
+    "m_Version": 18,
     "AccuracyMin": 0.8500000238418579,
     "AccuracyMax": 0.9200000166893005,
     "ThreatDistanceLimit": 400.0,
@@ -11,6 +11,8 @@
     ],
     "Vaulting": 1,
     "SniperProneDistanceThreshold": 0.0,
+    "AggressionTimeout": 120.0,
+    "GuardAggressionTimeout": 150.0,
     "Manners": 0,
     "MemeLevel": 0,
     "CanRecruitFriendly": 1,
@@ -23,6 +25,8 @@
     "LogAIKilled": 1,
     "EnableZombieVehicleAttackHandler": 0,
     "EnableZombieVehicleAttackPhysics": 0,
+    "OverrideClientWeaponFiring": 1,
+    "RecreateWeaponNetworkRepresentation": 1,
     "LightingConfigMinNightVisibilityMeters": {
         "0": 100.0,
         "1": 10.0
