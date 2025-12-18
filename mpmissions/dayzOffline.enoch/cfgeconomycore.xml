@@ -48,5 +48,9 @@ Do not forget to add attribute act="car", if root class represents moveable vehi
 		<file name="mmg_types_ADMINGEAR.xml" type="types" />
 		<file name="mmg_bare_types.xml" type="types" />
 	</ce>
+
+	<ce folder="db/airborne_ai">
+		<file name="airborne_types.xml" type="types" />
+	</ce>
 	
 </economycore>
