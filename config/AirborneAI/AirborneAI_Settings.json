@@ -3,7 +3,7 @@
     "Enabled": 1,
     "minPlayersToSpawnAircraft": 1,
     "maxActiveAircraft": 1,
-    "startDelayTime": 120.0,
+    "startDelayTime": 90.0,
     "timeBetweenPlaneSpawns": 300.0,
     "maxTimeBetweenPlaneSpawns": 400.0,
     "allowNightFlights": 0,
@@ -21,9 +21,9 @@
     "aircraftMinCrew": 2,
     "aircraftMaxCrew": 4,
     "aircraftCrewFaction": "East",
-    "aircraftCrewLoadout": "NBCLoadout",
+    "aircraftCrewLoadout": "EastLoadout",
     "aircraftCrewChanceToBurn": 25.0,
-    "aircraftCrewChanceOfDeath": 50.0,
+    "aircraftCrewChanceOfDeath": 33.0,
     "paratroopers": "--> The settings below are for AI paratroopers <--",
     "maxAmountAI": 3,
     "minAmountAI": 2,
@@ -35,7 +35,7 @@
     "typeOfAI": 0,
     "aiActivity": 2,
     "canBeLooted": 0,
-    "unlimitedReload": 1,
+    "unlimitedReload": 0,
     "maxMoveSpeed": 2.0,
     "minMoveSpeed": 1.0,
     "noiseInvestigationRange": 850.0,
@@ -81,7 +81,7 @@
             "attachments": "Chemlight_Green"
         },
         {
-            "chance": 75.0,
+            "chance": 10.0,
             "classname": "AKM",
             "attachments": "Mag_AKM_30Rnd,AK_WoodBttstck,AK_WoodHndgrd"
         },
@@ -102,12 +102,22 @@
         },
         {
             "chance": 100.0,
+            "classname": "AmmoBox_380_35Rnd",
+            "attachments": ""
+        },
+        {
+            "chance": 100.0,
             "classname": "AmmoBox_762x54_20Rnd",
             "attachments": ""
         },
         {
             "chance": 50.0,
             "classname": "BandageDressing",
+            "attachments": ""
+        },
+        {
+            "chance": 100.0,
+            "classname": "MMG_camelback_dark_woodland",
             "attachments": ""
         }
     ]

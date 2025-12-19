@@ -28,6 +28,7 @@ CLAUDE.md
 */storage_1/
 mpmissions/dayzOffline.enoch/storage_1/
 *.mdmp
+cache.ch
 
 # Ignore heatmap session files except the example
 config/Heatmap/session_*.json
