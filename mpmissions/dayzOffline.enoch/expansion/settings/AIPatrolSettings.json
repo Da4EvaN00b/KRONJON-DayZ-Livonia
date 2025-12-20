@@ -151,7 +151,7 @@
         {
             "Name": "Police-1",
             "Persist": 0,
-            "Faction": "East",
+            "Faction": "Raiders",
             "Formation": "",
             "FormationScale": 0.0,
             "FormationLooseness": 0.0,
@@ -191,7 +191,7 @@
         {
             "Name": "Police-2",
             "Persist": 0,
-            "Faction": "East",
+            "Faction": "Raiders",
             "Formation": "",
             "FormationScale": 0.0,
             "FormationLooseness": 0.0,
