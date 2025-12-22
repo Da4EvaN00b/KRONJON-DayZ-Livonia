@@ -35,10 +35,10 @@
 
     <!-- Anti-Air Missile Ammo -->
     <type name="AYSA_antiAirMissile">
-        <nominal>8</nominal>
+        <nominal>15</nominal>
         <lifetime>10800</lifetime>
         <restock>10800</restock>
-        <min>1</min>
+        <min>12</min>
         <quantmin>100</quantmin>
         <quantmax>100</quantmax>
         <cost>100</cost>
@@ -51,10 +51,10 @@
 
     <!-- Red Flare Ammo -->
     <type name="AYSA_redFlareAmmo">
-        <nominal>7</nominal>
+        <nominal>10</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>4</min>
+        <min>6</min>
         <quantmin>20</quantmin>
         <quantmax>40</quantmax>
         <cost>100</cost>
@@ -69,10 +69,10 @@
 
     <!-- Blue Flare Ammo -->
     <type name="AYSA_blueFlareAmmo">
-        <nominal>7</nominal>
+        <nominal>10</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>4</min>
+        <min>6</min>
         <quantmin>20</quantmin>
         <quantmax>40</quantmax>
         <cost>100</cost>
@@ -87,10 +87,10 @@
 
     <!-- Green Flare Ammo -->
     <type name="AYSA_greenFlareAmmo">
-        <nominal>7</nominal>
+        <nominal>10</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>4</min>
+        <min>6</min>
         <quantmin>20</quantmin>
         <quantmax>40</quantmax>
         <cost>100</cost>
