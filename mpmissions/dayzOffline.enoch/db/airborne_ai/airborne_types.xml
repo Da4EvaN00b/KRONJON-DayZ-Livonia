@@ -51,10 +51,10 @@
 
     <!-- Red Flare Ammo -->
     <type name="AYSA_redFlareAmmo">
-        <nominal>10</nominal>
+        <nominal>15</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>6</min>
+        <min>10</min>
         <quantmin>20</quantmin>
         <quantmax>40</quantmax>
         <cost>100</cost>
@@ -69,10 +69,10 @@
 
     <!-- Blue Flare Ammo -->
     <type name="AYSA_blueFlareAmmo">
-        <nominal>10</nominal>
+        <nominal>15</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>6</min>
+        <min>10</min>
         <quantmin>20</quantmin>
         <quantmax>40</quantmax>
         <cost>100</cost>
@@ -87,10 +87,10 @@
 
     <!-- Green Flare Ammo -->
     <type name="AYSA_greenFlareAmmo">
-        <nominal>10</nominal>
+        <nominal>15</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>6</min>
+        <min>10</min>
         <quantmin>20</quantmin>
         <quantmax>40</quantmax>
         <cost>100</cost>
